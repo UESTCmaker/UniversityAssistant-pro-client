@@ -1,0 +1,54 @@
+@import "search-item/search-item-template.wxss";
+
+.search {
+  margin: 0 0 10rpx 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #efeff4;
+}
+
+.search_col {
+  display: flex;
+  flex-direction: row;
+}
+
+.search input {
+  flex: 1;
+  margin: 10rpx;
+  padding: 4rpx 10rpx;
+  background-color: white;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.cancel {
+  font-size: 19px;
+  color: #0062cc;
+  width: 90rpx;
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  color: #999;
+}
+
+.search input:hover {
+  text-align: left;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.placeholder {
+  height: 86rpx;
+  width: 100%;
+}

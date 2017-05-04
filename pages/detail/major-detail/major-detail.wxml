@@ -1,0 +1,15 @@
+<import src="../../list/search-item/search-item-template.wxml" />
+<import src="../detail-package/detail-package-template.wxml" />
+<image class="cover" src="{{detailData.Image}}">
+</image>
+<view class="cover-img-hover">
+  <text class="title">{{detailData.Major}}</text>
+  <text class="sub-title">专业代码：{{detailData.Id}}</text>
+  <text class="sub-title">招生院校：{{detailData.University}}{{detailData.School}}</text>  
+</view>
+<template is="packageTemplate" data="{{Ctext:Cteach}}" />
+<view class="teachers">
+<block wx:for="{{detailData.Teachers}}" wx:for-item="teacher">
+    <template is="itemTemplate" data="{{...teacher}}" />
+  </block>
+</view>

@@ -1,0 +1,58 @@
+<template name="itemTemplate">
+  <view class="item-container" bindtap="onDetail" data-cate="{{show_cate}}" data-id="{{Id}}" data-sc="{{show_cate=='major'?SchoolCode:''}}">
+    <view class="item-info">
+      <image class="Img" mode="aspectFit" src="{{Icon}}"></image>
+      <view class="info">
+        <block wx:if="{{show_cate=='university'}}">
+          <text class="searchName">{{University}}</text>
+          <view class="info-text">
+            <text>属性：{{Property}}</text>
+            <text>地理位置：{{Location}}</text>
+            <text>类型：{{UType}}</text>
+          </view>
+        </block>
+        <block wx:elif="{{show_cate=='school'}}">
+          <text class="searchName">{{School}}</text>
+          <view class="info-text">
+            <text>建立时间：{{EstablishedTime}}</text>
+            <text>所属学校：{{University}}</text>
+            <text>学院官网：{{Website}}</text>
+          </view>
+        </block>
+        <block wx:elif="{{show_cate=='teacher'}}">
+          <text class="searchName">{{Name}}</text>
+          <view class="info-text">
+            <text>职称：{{Title}}</text>
+            <text>学历：{{Degree}}</text>
+            <text>所属院校：{{University}}{{School}}</text>
+          </view>
+        </block>
+        <block wx:elif="{{show_cate=='major'}}">
+          <text class="searchName">{{Major}}</text>
+          <view class="info-text">
+            <text>专业代码：{{Id}}</text>
+            <text>招生学院：{{School}}</text>
+            <text>所在学校：{{University}}</text>
+          </view>
+        </block>
+        <block wx:elif="{{show_cate=='field'}}">
+          <text class="searchName">{{Name}}</text>
+          <view class="info-text">
+            <text>招生专业：{{Major}}</text>
+            <text>所属院校：{{University}}{{School}}</text>
+            <text>研究方向：{{Field}}</text>
+          </view>
+        </block>
+        <block wx:elif="{{show_cate=='study'}}">
+          <text class="searchName">{{Name}}</text>
+          <view class="info-text">
+            <text>职称：{{Title}}</text>
+            <text>学历：{{Degree}}</text>
+            <text>研究方向：{{Field}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="lhr"></view>
+  </view>
+</template>

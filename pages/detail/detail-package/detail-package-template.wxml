@@ -1,0 +1,7 @@
+<template name="packageTemplate">
+  <view class="hr"></view>
+  <view class="detail-container">
+    <text class="name">{{Ctext}}</text>
+    <text class="info">{{detail}}</text>
+  </view>
+</template>

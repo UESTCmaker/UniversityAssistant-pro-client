@@ -1,0 +1,44 @@
+<import src="../detail-package/detail-package-template.wxml" />
+<import src="../../list/search-item/search-item-template.wxml" />
+<image class="cover" src="{{detailData.Image}}">
+</image>
+<view class="cover-img-hover">
+  <text class="title">{{detailData.University}}</text>
+  <text class="sub-title">{{detailData.EnglishName}}</text>
+</view>
+<image class="sicon" src="{{detailData.Icon}}"></image>
+<view class="detail-container">
+  <text class="name">{{detailData.University}}</text>
+  <view class="package">
+    <text class="provide">创办时间：</text>
+    <text class="info">{{detailData.EstablishedTime}}</text>
+  </view>
+  <view class="package">
+    <text class="provide">所属地区：</text>
+    <text class="info">{{detailData.Location}}</text>
+  </view>
+  <view class="package">
+    <text class="provide">学校类型：</text>
+    <text class="info">{{detailData.UType}}</text>
+  </view>
+    <view class="package">
+    <text class="provide">属性：</text>
+    <text class="info">{{detailData.Property}}</text>
+  </view>
+    <view class="package">
+    <text class="provide">主管部门：</text>
+    <text class="info">{{detailData.Department}}</text>
+  </view>
+    <view class="package">
+    <text class="provide">学校官网：</text>
+    <text class="info">{{detailData.Website}}</text>
+  </view>
+</view>
+<template is="packageTemplate" data="{{detail:detailData.Introduction,Ctext:Cintro}}" />
+<template is="packageTemplate" data="{{detail:detailData.History,Ctext:Chis}}" />
+<template is="packageTemplate" data="{{Ctext:Csch}}" />
+<view class="schools">
+<block wx:for="{{detailData.Schools}}" wx:for-item="school">
+    <template is="itemTemplate" data="{{...school}}" />
+  </block>
+</view>

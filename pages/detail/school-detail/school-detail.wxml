@@ -1,0 +1,32 @@
+<import src="../detail-package/detail-package-template.wxml" />
+<import src="../../list/search-item/search-item-template.wxml" />
+<image class="cover" src="{{detailData.Image}}">
+</image>
+<view class="cover-img-hover">
+  <text class="title">{{detailData.School}}</text>
+  <text class="sub-title">{{detailData.EnglishName}}</text>
+</view>
+<image class="sicon" src="{{detailData.Icon}}"></image>
+<view class="detail-container">
+  <text class="name">{{detailData.School}}</text>
+  <view class="package">
+    <text class="provide">创办时间：</text>
+    <text class="info">{{detailData.EstablishedTime}}</text>
+  </view>
+  <view class="package">
+    <text class="provide">所属学校：</text>
+    <text class="info">{{detailData.University}}</text>
+  </view>
+  <view class="package">
+    <text class="provide">官方网站：</text>
+    <text class="info">{{detailData.Website}}</text>
+  </view>
+</view>
+<template is="packageTemplate" data="{{detail:detailData.Introduction,Ctext:Cintro}}" />
+<template is="packageTemplate" data="{{detail:detailData.Majors,Ctext:Cmajor}}" />
+<template is="packageTemplate" data="{{Ctext:Cteach}}" />
+<view class="teachers">
+<block wx:for="{{detailData.Teachers}}" wx:for-item="teacher">
+    <template is="itemTemplate" data="{{...teacher}}" />
+  </block>
+</view>

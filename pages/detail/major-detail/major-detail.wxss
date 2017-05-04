@@ -1,0 +1,5 @@
+/* pages/detail/major-detail/major-detail.wxss */
+@import "../detail-package/detail-package-template.wxss";
+@import "../../list/search-item/search-item-template.wxss";
+@import "../detail-package/detail-package-template.wxss";
+@import "../school-detail/school-detail.wxss";

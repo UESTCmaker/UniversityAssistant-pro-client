@@ -1,0 +1,52 @@
+<import src="../switcher/switcher-template.wxml" />
+<template is="switcher" data="{{nav_items}}" />
+<view class="reminder">
+  <text class="remind">请选择查询内容</text>
+</view>
+<picker bindchange="bindPickerChange" data-sec="l" value="{{location_index}}" range="{{location_array}}" disabled="{{false}}">
+  <view class="picker">
+    <view class="picker_title">省份</view>
+    <view class="picker_selected">{{show_sec.l ? location_array[location_index]:''}}</view>
+  </view>
+</picker>
+<picker bindchange="bindPickerChange" data-sec="u" value="{{university_index}}" range="{{university_array}}" disabled="{{show_sec.l==0}}">
+  <view class="picker">
+    <view class="picker_title {{show_sec.l==0?'disable':''}}">学校</view>
+    <view class="picker_selected">{{show_sec.u ? university_array[university_index]:''}}</view>
+  </view>
+</picker>
+<block wx:if="{{nav_items[0][1]==0}}">
+  <picker bindchange="bindPickerChange" data-sec="s" value="{{school_index}}" range="{{school_array}}" disabled="{{show_sec.u==0}}">
+    <view class="picker">
+      <view class="picker_title {{show_sec.u==0?'disable':''}}">学院</view>
+      <view class="picker_selected">{{show_sec.s ? school_array[school_index]:''}}</view>
+    </view>
+  </picker>
+</block>
+<block wx:if="{{nav_items[2][1]==1}}">
+  <picker bindchange="bindPickerChange" data-sec="n" value="{{teacher_index}}" range="{{teacher_array}}" disabled="{{show_sec.s==0}}">
+    <view class="picker">
+      <view class="picker_title {{show_sec.s==0?'disable':''}}">姓名</view>
+      <view class="picker_selected">{{show_sec.n ? teacher_array[teacher_index]:''}}</view>
+    </view>
+  </picker>
+</block>
+<block wx:if="{{nav_items[3][1]==1}}">
+  <picker bindchange="bindPickerChange" data-sec="ed" value="{{education_index}}" range="{{education_array}}" disabled="{{show_sec.s==0}}">
+    <view class="picker">
+      <view class="picker_title {{show_sec.s==0?'disable':''}}">学历</view>
+      <view class="picker_selected">{{show_sec.ed ? education_array[education_index]:''}}</view>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange" data-sec="j" value="{{major_index}}" range="{{major_array}}" disabled="{{show_sec.ed==0}}">
+    <view class="picker">
+      <view class="picker_title {{show_sec.ed==0?'disable':''}}">招生专业</view>
+      <view class="picker_selected">{{show_sec.j ? major_array[major_index]:''}}</view>
+    </view>
+  </picker>
+</block>
+
+<view class="submit" bindtap="onsubmit"><text>查 询</text></view>
+<view class="feedback" bindtap="onfeedback">
+  <text>问题反馈</text>
+</view>

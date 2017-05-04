@@ -1,0 +1,7 @@
+/* pages/detail/university-detail/university-detail.wxss */
+@import "../detail-package/detail-package-template.wxss";
+@import "../school-detail/school-detail.wxss";
+@import "../../list/search-item/search-item-template.wxss";
+.schools {
+  margin: 0 20rpx 20rpx 20rpx;
+}

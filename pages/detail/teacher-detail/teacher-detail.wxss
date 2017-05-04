@@ -1,0 +1,79 @@
+/* pages/detail/teacher-detail/teacher-detail.wxss */
+page{
+  background-color: white;
+}
+
+.detail-container {
+  font-family: MicroSoft Yahei;
+  margin: 25rpx 20rpx 20rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+}
+
+.info {
+  color: #333;
+  font-size: 10px;
+}
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.basic {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40rpx;
+  margin-right: 10rpx;
+}
+
+.basic image {
+  width: 220rpx;
+  height: 280rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rpx;
+}
+
+.package {
+  font-family: MicroSoft Yahei;
+}
+
+.provide {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.info {
+  color: #333;
+  font-size: 28rpx;
+}
+
+.tname {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20rpx;
+  font-family: MicroSoft Yahei;
+}
+
+.detail{
+  color: #333;
+  font-size: 12px;
+  margin:40rpx 0;
+  word-break: break-all; 
+  word-wrap:break-word;
+}

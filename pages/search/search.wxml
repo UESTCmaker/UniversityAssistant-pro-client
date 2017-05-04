@@ -1,0 +1,27 @@
+<view class="wrap">
+  <view class="adv">
+    <text>帮您查找</text>
+    <text>全面有效的高校信息</text>
+  </view>
+  <view class="search">
+    <input placeholder="{{holder_text}}" value="{{content}}" placeholder-class="input-text" confirm-type="search" bindconfirm="onSearch" bindblur="onChange" maxlength="30" />
+  </view>
+</view>
+<view class="search_pad">
+  <view class="search_reminder">
+    切换搜索内容
+  </view>
+  <view class="search_row">
+    <view class="search_item first" bindtap="onclick" data-sec="u">学校信息</view>
+    <view class="search_item" bindtap="onclick" data-sec="s">学院信息</view>
+    <view class="search_item" bindtap="onclick" data-sec="n">教师信息</view>
+  </view>
+  <view class="search_row">
+    <view class="search_item first" bindtap="onclick" data-sec="m">硕士专业</view>
+    <view class="search_item" bindtap="onclick" data-sec="p">博士专业</view>
+    <view class="search_item" bindtap="onclick" data-sec="f">研究方向</view>
+  </view>
+</view>
+<view class="feedback" bindtap="onfeedback">
+  <text>问题反馈</text>
+</view>

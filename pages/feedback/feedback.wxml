@@ -1,0 +1,23 @@
+<form bindsubmit="onsubmit">
+  <view class="feedback_container">
+    <text class="title">问题反馈表</text>
+    <view class="col">
+      <text class="need"></text>
+      <text> 联系方式：</text>
+      <input class="contact" name="contact" placeholder="请输入您的电子邮箱" placeholder-style="font-family:Microsoft Yahei" />
+    </view>
+    <view class="col">
+      <text class="need">*</text>
+      <text>问题类型：</text>
+      <view class="item {{problem[0]==1?'active':''}}" bindtap="onclick" data-id="1">信息缺失</view>
+      <view class="item {{problem[1]==1?'active':''}}" bindtap="onclick" data-id="2">信息有误</view>
+      <view class="item {{problem[2]==1?'active':''}}" bindtap="onclick" data-id="3">其他</view>
+    </view>
+    <view class="col">
+      <text class="need">*</text>
+      <text>问题详情：</text>
+    </view>
+    <textarea class="detail" name="detail"placeholder="请输入问题详细信息" />
+    <button class="submit" size="mini" formType="submit">提 交</button>
+  </view>
+</form>

@@ -1,0 +1,25 @@
+.detail-container{
+ font-family: MicroSoft Yahei;
+ margin: 25rpx 20rpx 20rpx 40rpx;
+ display: flex;
+ flex-direction: column;
+}
+
+.name{
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+}
+
+.info{
+    color:#333333;
+    font-size: 14px;
+
+}
+
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #d9d9d9;
+}

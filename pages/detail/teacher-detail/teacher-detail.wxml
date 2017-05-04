@@ -1,0 +1,35 @@
+<template name="teacherTemplate">
+  <view class="detail-container">
+    <text class="name">{{Ctext}}</text>
+    <view class="hr"></view>
+    <text class="detail" wx:if="{{detail}}">{{detail}}</text>
+  </view>
+</template>
+
+<template is="teacherTemplate" data="{{Ctext:Cbasic}}" />
+<view class="basic">
+  <image mode="scaleToFill" src="{{detailData.Icon}}"></image>
+  <view class="basic-info">
+    <text class="tname">{{detailData.Name}} {{detailData.Title}}</text>
+    <view class="package">
+      <text class="provide">学位：</text>
+      <text class="info">{{detailData.Degree}}</text>
+    </view>
+    <view class="package">
+      <text class="provide">所在学校：</text>
+      <text class="info">{{detailData.University}}</text>
+    </view>
+    <view class="package">
+      <text class="provide">所在学院：</text>
+      <text class="info">{{detailData.School}}</text>
+    </view>
+    <view class="package">
+      <text class="provide">电子邮箱：</text>
+      <text class="info">{{detailData.Email}}</text>
+    </view>
+  </view>
+</view>
+<template is="teacherTemplate" data="{{detail:detailData.Introduction,Ctext:Cintro}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Experience,Ctext:Cexp}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Project,Ctext:Csci}}" />
+<template is="teacherTemplate" data="{{detail:detailData.Paper,Ctext:Cpa}}" />

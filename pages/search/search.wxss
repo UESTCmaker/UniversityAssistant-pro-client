@@ -1,0 +1,86 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 130rpx 0 40rpx 0;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx auto;
+  text-align: center;
+}
+
+.adv text {
+  margin-bottom: 30rpx;
+  font-family: Microsoft Yahei;
+  font-size: 18px;
+}
+
+.search {
+  margin: 15rpx auto;
+}
+
+.search input {
+  padding: 4rpx 20rpx;
+  background-color: white;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  width: 550rpx;
+  height: 70rpx;
+  border-radius: 10px;
+}
+
+.input-text {
+  color: #999;
+}
+
+.search input:hover {
+  text-align: left;
+}
+
+.search_pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.search_reminder {
+  color: #999;
+  font-family: Microsoft Yahei;
+  font-size: 14px;
+  margin-bottom: 40rpx;
+}
+
+.search_row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.search_item {
+  color: #0062cc;
+  font-family: Microsoft Yahei;
+  font-size: 15px;
+  border-left: 1px solid #ddd;
+  padding: 10rpx 30rpx;
+}
+
+.first {
+  border-left: 0;
+}
+
+.feedback {
+  position: absolute;
+  top: 1000rpx;
+  width: 100%;
+  height: 30rpx;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+}

@@ -1,0 +1,77 @@
+/* pages/feedback/feedback.wxss */
+
+page {
+  background-color: #efeff4;
+}
+
+.feedback_container {
+  display: flex;
+  flex-direction: column;
+  font-family: Microsoft Yahei;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #0062cc;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30rpx;
+  font-size: 16px;
+  height: 55rpx;
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 60rpx;
+  color: black;
+}
+
+.item {
+  margin-left: 20rpx;
+  padding: 0rpx 20rpx;
+  border: 1px solid #0062cc;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #dedcde;
+  font-family: Microsoft Yahei;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  padding-left: 10rpx;
+  width: 500rpx;
+}
+
+.detail {
+  background-color: #dedcde;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 680rpx;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+}
+
+.submit {
+  margin: 60rpx auto;
+  align-items:center; 
+  background-color: #0062cc;
+  color: white;
+  border-radius: 5px;
+  width: 150rpx;
+}
+
+.active {
+  background-color: #0062cc;
+  color: white;
+}
+
+.need {
+  color: red;
+  width: 15rpx;
+}

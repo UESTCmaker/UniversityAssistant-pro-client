@@ -1,0 +1,45 @@
+.item-container{
+    width: 100%;
+    margin-bottom: 45rpx;
+    background-color:white;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20rpx;
+}
+.Img{
+    width: 200rpx;
+    height: 200rpx;
+    margin: auto 20rpx auto 20rpx;
+}
+.searchName{
+    margin: auto 20rpx auto 0;
+    font-size: 40rpx;
+    text-align: center;
+    font-family: MicroSoft Yahei;
+}
+
+.info-text{
+    width:520rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    font-family: MicroSoft Yahei;
+    color: #666;
+    margin-top: 6rpx;
+    margin-right: 10rpx;
+}
+
+.info-text text{
+    margin-top: 10rpx;
+}
+
+.lhr{
+    margin-top: 30rpx;
+    height: 1px;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+

@@ -1,0 +1,7 @@
+<template name="switcher">
+  <view class="navbar">
+    <block wx:for="{{nav_items}}" wx:for-item="item" wx:for-index="idx">
+      <view class="navbar-item {{idx==0?'first':''}} {{item[1]==1?'active':'inactive'}}" bindtap="onNavClick" data-id="{{idx}}">{{item[0]}}</view>
+    </block>
+  </view>
+</template>

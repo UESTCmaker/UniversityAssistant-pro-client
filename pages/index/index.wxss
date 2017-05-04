@@ -1,0 +1,65 @@
+@import "../switcher/switcher-template.wxss";
+
+.reminder {
+  margin-top: 30rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.remind {
+  color: black;
+  font-family: Microsoft Yahei;
+  font-size: 14px;
+}
+
+.picker {
+  margin-bottom: 50rpx;
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: black;
+  font-family: Microsoft Yahei;
+  font-size: 16px;
+  text-align: center;
+}
+
+.picker_title {
+  margin: 14rpx 0 15rpx 20rpx;
+}
+
+.picker_selected {
+  color: black;
+  font-family: Microsoft Yahei;
+  font-size: 16px;
+  margin: 14rpx 0 15rpx 20rpx;
+}
+
+.disable {
+  color: #DDD;
+}
+.feedback {
+  position: absolute;
+  top: 1000rpx;
+  width: 100%;
+  height: 30rpx;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+}
+
+.submit {
+  margin: 80rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #0062cc;
+  width: 180rpx;
+  height: 60rpx;
+  font-family: Microsoft Yahei;
+  font-size: 15px;
+}

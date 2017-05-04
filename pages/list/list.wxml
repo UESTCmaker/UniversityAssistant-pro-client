@@ -1,0 +1,14 @@
+<import src="search-item/search-item-template.wxml" />
+<view class="search">
+  <view class="search_col">
+    <input placeholder="{{holder_text}}" value="{{content}}" placeholder-class="input-text" confirm-type="search" maxlength="30" bindconfirm="onSearch" bindblur="onChange" lower-threshold="20px" />
+    <view class="cancel" bindtap="onNavback"><text>取消</text></view>
+  </view>
+  <view class="hr"></view>
+</view>
+<view class="placeholder"></view>
+<view>
+  <block wx:for="{{boxs}}" wx:for-item="box" wx:>
+    <template is="itemTemplate" data="{{...box}}" />
+  </block>
+</view>
